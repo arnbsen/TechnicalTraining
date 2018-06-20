@@ -1,0 +1,17 @@
+package Day3;
+
+public class Student {
+	static Student s1;
+	static String name;
+	static int roll_no;
+	private Student() {
+			name = "ABC";
+			roll_no = 64;
+	} 
+	static Student getObject() {
+		return s1;
+	}
+}
+
+
+

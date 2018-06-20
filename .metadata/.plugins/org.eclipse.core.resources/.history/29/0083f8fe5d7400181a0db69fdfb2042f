@@ -1,0 +1,21 @@
+package Day3;
+
+public class Student {
+	static Student s1 = new Student();
+	static String name;
+	static int roll;
+	/*static {
+		s1 = new Student();
+		s1.name = "Arnab";			
+	}*/
+	private Student() {
+		name = "Arnab";
+		roll = 64;
+	} 
+	static Student getObject() {
+		return s1;
+	}
+}
+
+
+

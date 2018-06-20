@@ -1,0 +1,21 @@
+package Day3;
+
+public class Student {
+	static Student s1;
+	static String name;
+	static {
+		s1 = new Student();
+		s1.name = "Arnab";			
+	}
+	
+	private Student() {
+		
+	} 
+	
+	static Student getObject() {
+		return s1;
+	}
+}
+
+
+

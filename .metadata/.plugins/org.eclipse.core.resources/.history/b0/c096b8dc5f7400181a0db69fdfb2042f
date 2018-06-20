@@ -1,0 +1,31 @@
+package Day3;
+
+public class Student {
+	Student s1,s2;
+	String name;
+	int roll;
+	int count;
+	/*static {
+		s1 = new Student();
+		s1.name = "Arnab";			
+	}*/
+
+	private Student() {
+		name = "Arnab";
+		roll = 64;
+	} 
+	Student getObject() {
+		if(s1.count < 1) {
+			s1 = new Student();
+			count = count + 1;
+			s2 = s1;
+			return s1;
+
+		}else {
+			return s2;
+		}
+	}
+}
+
+
+

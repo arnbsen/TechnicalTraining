@@ -1,0 +1,18 @@
+package Day3;
+
+public class Student {
+	static Student s1 = new Student();
+	static String name;
+	static int roll;
+	
+	private Student() {
+		name = "Arnab";
+		roll = 64;
+	} 
+	static Student getObject() {
+		return s1;
+	}
+}
+
+
+
