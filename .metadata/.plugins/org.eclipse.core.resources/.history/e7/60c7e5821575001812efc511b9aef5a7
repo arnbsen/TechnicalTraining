@@ -1,0 +1,36 @@
+package Day4;
+
+public class Person {
+	private String name;
+	private int age;
+	Person(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "Person{ Name:" + this.name + "Age: " + Integer.toString(this.age) + " }";
+	}
+	@Override
+	public boolean equals(Object obj) {
+		Person p1 = (Person)obj;
+		if(this.name.equals(p1.name) && this.age == p1.age) {
+			System.out.println(p1.name + " " + this.name);
+			
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p1 = new Person("Arnab", 21);
+		System.out.println(p1.toString());
+		Person p2 = new Person("Random", 43);
+		System.out.println(p2.equals(p1));
+		Person p3 = new Person("Random", 43);
+		System.out.println(p2.equals(p3));
+	}
+
+}
