@@ -1,0 +1,21 @@
+package Day4;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Collections1 {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List data = new ArrayList<>();
+		data.add("Hello");
+		data.add(1);
+		data.add("Hello1");
+		Iterator itr = data.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
+	}
+
+}

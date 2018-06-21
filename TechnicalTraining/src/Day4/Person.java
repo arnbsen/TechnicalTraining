@@ -15,12 +15,12 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return "Person{ Name:" + this.name + "Age: " + Integer.toString(this.age) + " }";
+		return "Person { Name: " + this.name + " Age: " + Integer.toString(this.age) + " }";
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
-		Person p1 = (Person)obj;
+		Person p1 = (Person)obj; // Type casting the Object obj to Person p1 to access vars of Person class
 		if(this.name.equals(p1.name) && this.age == p1.age) {
 			return true;
 		}else {
