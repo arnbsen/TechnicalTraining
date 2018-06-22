@@ -1,0 +1,14 @@
+package Day4;
+import java.util.List;
+import java.util.ArrayList;
+
+
+public class Collections3 {
+	public static void main(String[] args) {
+		List data = new ArrayList();
+		data.add("jon snow");
+		data.add("ned stark");
+		
+		System.out.println(data.get(0).toString().toUpperCase());
+	}
+}

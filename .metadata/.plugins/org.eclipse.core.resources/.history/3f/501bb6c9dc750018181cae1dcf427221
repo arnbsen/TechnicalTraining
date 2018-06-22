@@ -1,0 +1,18 @@
+package Day4;
+import java.util.List;
+import java.util.ArrayList;
+
+
+public class Collections3 {
+	public static void main(String[] args) {
+		//Example of Java Generics in Collection
+		
+		List data = new ArrayList();
+		data.add("jon snow");
+		data.add("ned stark");
+		
+		String s1 = (String)data.get(0);
+		System.out.println(s1.toUpperCase());
+		
+	}
+}
