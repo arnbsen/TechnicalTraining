@@ -1,0 +1,23 @@
+package Day5;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.HashSet;
+
+
+public class Exersice1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String input = "Hello there there where near dear near everyone hello me then \"Hello";
+		String[] sp = input.split("[\" ,.]");
+		sc.close();
+		Set<String> set1 = new HashSet<>();
+		for(String i : sp) {
+			set1.add(i);
+		}
+		System.out.println("Printing unique words\n");
+		set1.forEach(System.out::println);
+
+	}
+
+}

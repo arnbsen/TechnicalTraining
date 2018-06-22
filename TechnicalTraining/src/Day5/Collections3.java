@@ -14,7 +14,7 @@ public class Collections3 {
 		data.add("jon snow");
 		data.add("ned stark");
 		
-		String s1 = (String)data.get(0); //Need typecasting
+		String s1 = (String)data.get(0); //Needs type casting
 		System.out.println(s1.toUpperCase());
 		
 		// Using Generics

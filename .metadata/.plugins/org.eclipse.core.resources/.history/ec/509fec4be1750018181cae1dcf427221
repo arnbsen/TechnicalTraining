@@ -1,0 +1,21 @@
+package Day5;
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+
+public class Collections4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Without Generics
+		Queue queue = new PriorityQueue();
+		queue.add("Hello");
+		queue.add("There!!!");
+		
+		System.out.println((String)queue.peek().toString());
+		
+	}
+
+}
