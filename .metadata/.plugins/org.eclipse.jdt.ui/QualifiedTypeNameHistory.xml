@@ -15,4 +15,8 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Day6.Student"/>
+<fullyQualifiedTypeName name="Day6.AgeNotAppllicable"/>
+<fullyQualifiedTypeName name="Day6.AgeNotApplicable"/>
 </qualifiedTypeNameHistroy>

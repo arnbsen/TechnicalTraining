@@ -1,0 +1,36 @@
+package Day6;
+class AgeNotAppllicable extends Exception{
+
+	public AgeNotAppllicable() {
+		// TODO Auto-generated constructor stub
+		super("Age Not Applicable");
+	}
+	
+}
+public class Student {
+	private String name;
+	private int age;
+	
+	public Student(String name, int age) throws AgeNotAppllicable{
+		super();
+		if (age < 18) {
+			throw new AgeNotAppllicable();
+		}else {
+			this.name = name;
+			this.age = age;
+		}
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + "]";
+	}
+	
+
+
+	public static void main(String[] args) throws AgeNotAppllicable{
+		// TODO Auto-generated method stub
+		Student s1 = new Student("Arnab", 6);
+	}
+
+}
