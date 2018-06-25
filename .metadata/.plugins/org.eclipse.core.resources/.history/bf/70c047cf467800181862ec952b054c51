@@ -1,0 +1,39 @@
+package com.thinkxfactor.zomatoplus.controller;
+
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.thinkxfactor.zomatoplus.models.User;
+
+
+@RestController //Because we are using RESTful services
+@RequestMapping("/user") // maps address of the controller to access. Context path
+public class UserController {
+
+	
+	/*Only sending data from the server to browser
+	@GetMapping("/login") // GET request. GET mapping
+	public User userLogin() {
+		User u1 = new User();
+		u1.setUserName("arnb");
+		u1.setPassword("pass");
+		return u1;
+	}
+	//The output of the method is displayed on the browser
+	*/
+	
+	//Get data form the user
+	
+	@GetMapping("/login") 
+	public User userLogin(@RequestParam("username") String username, @RequestParam("password") String pwd) {
+		String s1, s2;
+		User u1 = new User();
+		u1.setUserName(username);
+		u1.setPassword(pwd);
+		return u1;
+	}
+
+}

@@ -1,0 +1,67 @@
+package com.thinkxfactor.zomatoplus.models;
+
+import java.io.Serializable;
+import java.net.URL;
+
+public class Restaurant implements Serializable{
+	private String name;
+	private String address;
+	private int rating;
+	private URL website;
+	private int phoneNo;
+	
+	public Restaurant() {}
+
+	public Restaurant(String name, String address, int rating, URL website, int phoneNo) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.rating = rating;
+		this.website = website;
+		this.phoneNo = phoneNo;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getRating() {
+		return rating;
+	}
+
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
+
+	public URL getWebsite() {
+		return website;
+	}
+
+	public void setWebsite(URL website) {
+		this.website = website;
+	}
+
+	public int getPhoneNo() {
+		return phoneNo;
+	}
+
+	public void setPhoneNo(int phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+	
+	
+	
+	
+}
